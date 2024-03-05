@@ -5,6 +5,33 @@
     max-width: 1280px;
 }
 
+/* GENERAL STYLING */
+/* Header */
+.header {
+
+}
+/* Hero */
+.hero {
+
+}
+/* Content */
+.content {
+
+}
+/* Quote */
+.quote {
+
+}
+/* Call to Action */
+.cta {
+
+}
+/* Footer */
+.footer {
+
+}
+
+/* PLACEHOLDERS (Hero & Content Cards) */
 /* Placeholder Image */
 .placeholder {
     display: flex;
