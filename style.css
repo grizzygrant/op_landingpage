@@ -8,27 +8,60 @@
 /* GENERAL STYLING */
 /* Header */
 .header {
-
+    background-color: #1f2937;
+}
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+.nav {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 /* Hero */
 .hero {
-
+    background-color: #1f2937;
+}
+.hero-div > h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+}
+.hero-div > p {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 /* Content */
 .content {
 
 }
+.content-div h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+}
 /* Quote */
 .quote {
-
+    background-color: #e5e7eb;
+}
+.quote-text {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+}
+.signature {
+    font-style: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 /* Call to Action */
 .cta {
-
+    background-color: #3882f6;
 }
 /* Footer */
 .footer {
-
+    background-color: #1f2937;
 }
 
 /* PLACEHOLDERS (Hero & Content Cards) */
