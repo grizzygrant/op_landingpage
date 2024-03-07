@@ -1,11 +1,13 @@
-
-/* Set max-width for containers inside sections */
-.header-div, .hero-div, .content-div, 
-.quote-div, .cta-div, .footer-div {
-    max-width: 1280px;
+/* REMOVE AFTER COMPLETION */
+section, header, footer {
+    border-bottom: 2px black dotted;
 }
 
 /* GENERAL STYLING */
+/* Body */
+body {
+    margin: 0;
+}
 /* Header */
 .header {
     background-color: #1f2937;
@@ -22,19 +24,23 @@
 .hero {
     background-color: #1f2937;
 }
-.hero-div > h1 {
+.hero-content > h1 {
     font-size: 48px;
     font-weight: extra-bold;
     color: #f9faf8;
 }
-.hero-div > p {
+.hero-content > p {
     font-size: 18px;
     color: #e5e7eb;
 }
-/* Content */
-.content {
-
+.hero-button {
+    padding: 8px 2em;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border: none;
 }
+/* Content */
 .content-div h2 {
     font-size: 36px;
     font-weight: extra-bold;
@@ -55,6 +61,19 @@
     font-weight: bold;
     font-size: 18px;
 }
+/* Link & Text Styling */
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+}
 /* Call to Action */
 .cta {
     background-color: #3882f6;
@@ -62,26 +81,96 @@
 /* Footer */
 .footer {
     background-color: #1f2937;
+    color: #e5e7eb;
 }
+
 
 /* PLACEHOLDERS (Hero & Content Cards) */
 /* Placeholder Image */
 .placeholder {
     display: flex;
-    max-width: 300px;
     min-width: 300px;
-    max-height: 150px;
     min-height: 150px;
+    max-width: 50%;
     background-color: #696969;
     color: #fff;
     justify-content: center;
     align-items: center;
+    flex: 2 1;
 }
-
 /* Sizing cards -- may be temporary */
 .card-image {
     height: 100px;
-    width: 100px;
+    min-width: 100px;
     border: 2px #0000ff solid;
     border-radius: 16px;
 }
+
+
+/* FLEXBOX */
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+}
+.header {
+    padding: 32px 16px;
+}
+.nav {
+    display: flex;
+    gap: 16px;
+}
+/* Hero */
+.hero-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    min-height: 50vh;
+    gap: 3em;
+    padding: 32px 16px;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-content h1, .hero-content p {
+    margin-bottom: 16px;
+}
+/* Content */
+.content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 40vh;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content-div h2 {
+    margin-bottom: 16px;
+}
+
