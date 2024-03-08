@@ -231,6 +231,6 @@ body {
     padding: 2em 0;
  }
 
- .header-div, .hero-div, .quote-div, .cta-container, .footer-div {
+.quote-div, .cta-container, .footer-div {
     margin: 0 1em;
  }
