@@ -1,8 +1,3 @@
-/* REMOVE AFTER COMPLETION */
-section, header, footer {
-    border-bottom: 2px black dotted;
-}
-
 /* GENERAL STYLING */
 /* Body */
 body {
@@ -75,8 +70,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
 }
 /* Call to Action */
-.cta {
+.cta-container {
     background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 12px;
 }
 /* Footer */
 .footer {
@@ -100,8 +97,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 /* Sizing cards -- may be temporary */
 .card-image {
-    height: 100px;
-    min-width: 100px;
+    height: 125px;
+    min-width: 125px;
     border: 2px #0000ff solid;
     border-radius: 16px;
 }
@@ -137,7 +134,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 1080px;
-    min-height: 50vh;
+    min-height: 60vh;
     gap: 3em;
     padding: 32px 16px;
 }
@@ -148,29 +145,92 @@ body {
     margin-bottom: 16px;
 }
 /* Content */
+.content {
+    justify-content: center;
+    align-items: center;
+}
 .content-div {
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1080px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 40vh;
 }
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
+    margin-top: 1em;
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 16px;
 }
 .content-div h2 {
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
+/* Quote */
+.quote {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-div {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.signature {
+    align-self: flex-end;
+    padding-right: 2em;
+}
+/* Call to Action */
+.cta {
+    display: flex;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.cta-container {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    flex: 1;
+}
+.cta-div {
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    flex: 1;
+    padding: 2em 2em;
+}
+.cta-button {
+    background-color:#3882f6;
+    border: 2px #f9faf8 solid;
+    border-radius: 8px;
+    color: #f9faf8;
+    padding: 8px 16px;
+    flex-grow: 0;
+}
+/* Footer */
+ .footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+ }
 
+ .header-div, .hero-div, .quote-div, .cta-container, .footer-div {
+    margin: 0 1em;
+ }
